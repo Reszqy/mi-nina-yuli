@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2b1028">
+<title>Para mi niña YULI ♡</title>
+<style>
+:root{--rose:#ff7896;--pink:#ffd1dc;--cream:#fff7f2;--ink:#38182f;--glass:rgba(255,247,242,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:Georgia,"Times New Roman",serif;background:#210f27;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 10%,#6d294e 0,transparent 38%),radial-gradient(ellipse at 85% 30%,#42204e 0,transparent 38%),linear-gradient(145deg,#1b1028,#401b37 55%,#170e24)}
+.stars,.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.star{position:absolute;width:2px;height:2px;background:#fff1d8;border-radius:50%;opacity:.6;animation:twinkle 3s infinite alternate}
+@keyframes twinkle{to{opacity:.12;transform:scale(.5)}}
+.heart{position:absolute;bottom:-50px;color:#ff9bb3;opacity:0;animation:floatUp linear forwards;text-shadow:0 0 18px #ff7896}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0) scale(.7);opacity:0}12%{opacity:.65}85%{opacity:.4}100%{transform:translateY(-115vh) rotate(35deg) scale(1.2);opacity:0}}
+.wrap{width:min(900px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;color:#ffe0e7;font-size:.92rem;gap:12px}
+.brand{letter-spacing:.12em;text-transform:uppercase;font-size:.72rem}
+.pill{border:1px solid #ffffff42;border-radius:999px;padding:9px 13px;background:#ffffff0c;color:#fff0f4;cursor:pointer;font:inherit;font-size:.83rem}
+.hero{min-height:83vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:45px 0 70px}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:#ffb9ca;font: .72rem Arial,sans-serif}
+h1{font-size:clamp(3rem,10vw,6.8rem);line-height:.95;margin:24px 0 18px;font-weight:normal;letter-spacing:-.055em}
+h1 em{font-weight:normal;color:#ff9bb3}
+.subtitle{font-size:clamp(1.05rem,3vw,1.35rem);max-width:590px;line-height:1.7;color:#f8dfe8;margin:0 auto 28px}
+.heart-mark{font-size:2rem;color:var(--rose);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.18);text-shadow:0 0 25px #ff7896}}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;margin-top:14px}
+.btn{border:0;border-radius:999px;padding:13px 20px;font-weight:bold;cursor:pointer;transition:transform .2s,filter .2s;font-size:.92rem}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.primary{background:linear-gradient(120deg,#ff9bb3,#ffd0d9);color:#42182f;box-shadow:0 8px 30px #ff789633}
+.secondary{background:#ffffff0c;border:1px solid #ffffff50;color:#fff3f6}
+section{padding:65px 0}
+.section-label{text-align:center;color:#ffb9ca;font: .72rem Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase}
+h2{text-align:center;font-size:clamp(2rem,6vw,3.4rem);font-weight:normal;margin:14px 0 25px}
+.panel{border:1px solid #ffffff28;background:linear-gradient(135deg,#ffffff12,#ffffff05);backdrop-filter:blur(10px);border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 22px 80px #09071130}
+.letter{font-size:1.12rem;line-height:1.95;color:#fff0f4}
+.letter p{margin:0 0 18px}
+.signature{font-size:1.5rem;color:#ffb0c3;font-style:italic;margin-top:24px}
+.translation{border-top:1px solid #ffffff24;margin-top:28px;padding-top:24px;color:#e8d1df;font:1rem/1.85 Arial,sans-serif}
+.translation strong{display:block;color:#ffb9ca;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.counter{text-align:center}
+.counter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:28px 0}
+.timebox{padding:18px 5px;border:1px solid #ffffff25;border-radius:17px;background:#ffffff09}
+.num{font-size:clamp(1.7rem,6vw,3rem);display:block;color:#ffc0ce}
+.unit{font: .7rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#ead3df}
+.date-form{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:20px;font: .9rem Arial,sans-serif}
+input[type=date]{background:#fff7f2;color:#38182f;border:0;border-radius:10px;padding:11px;font:inherit}
+.note{font: .82rem/1.7 Arial,sans-serif;color:#d9c0d2;max-width:550px;margin:14px auto 0}
+.surprise{display:none;text-align:center;animation:reveal .8s ease both}
+.surprise.show{display:block}
+@keyframes reveal{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+.surprise-quote{font-size:clamp(1.35rem,4vw,2.1rem);line-height:1.6;color:#ffe4ea}
+footer{text-align:center;padding:35px 0 45px;color:#c8a9bf;font: .8rem Arial,sans-serif}
+footer span{color:#ff9bb3}
+#musicStatus{min-width:96px}
+@media(max-width:520px){nav{padding:17px 0}.brand{font-size:.62rem}.hero{min-height:76vh;padding-top:35px}.counter-grid{gap:6px}.timebox{padding:15px 2px}.unit{font-size:.58rem}.panel{border-radius:18px}section{padding:48px 0}.letter{font-size:1.03rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div><div class="hearts" id="hearts"></div>
+<div class="wrap">
+<nav><div class="brand">Una pequeña historia de amor</div><button class="pill" id="langBtn" type="button">Ver en Indonesia</button></nav>
+<header class="hero">
+  <div class="eyebrow" data-es="Para alguien que llegó bonito a mi vida" data-id="Untuk seseorang yang hadir dengan indah di hidupku">Para alguien que llegó bonito a mi vida</div>
+  <h1>Mi niña<br><em>YULI</em></h1>
+  <p class="subtitle" data-es="Quizás llevamos poquito tiempo, pero hay personas que hacen que los días se sientan distintos desde el principio." data-id="Mungkin kita belum lama bersama, tapi ada orang yang membuat hari-hari terasa berbeda sejak awal.">Quizás llevamos poquito tiempo, pero hay personas que hacen que los días se sientan distintos desde el principio.</p>
+  <div class="heart-mark">♡</div>
+  <div class="actions"><button class="btn primary" onclick="document.querySelector('#carta').scrollIntoView({behavior:'smooth'})" data-es="Leer mi cartita" data-id="Baca surat kecilku">Leer mi cartita</button><button class="btn secondary" id="surpriseBtn" data-es="Una sorpresa para ti ✨" data-id="Kejutan untukmu ✨">Una sorpresa para ti ✨</button></div>
+</header>
+<section id="carta">
+  <div class="section-label" data-es="Con cariño, para ti" data-id="Dengan penuh sayang, untukmu">Con cariño, para ti</div>
+  <h2 data-es="Unas palabras del corazón" data-id="Beberapa kata dari hati">Unas palabras del corazón</h2>
+  <article class="panel letter">
+    <div id="spanishLetter">
+      <p>Mi niña YULI,</p>
+      <p>No llevamos ni un mes completito, y aun así me nace escribirte algo que salga de verdad del corazón. No quiero apurar el tiempo ni prometerte una película perfecta; quiero conocerte de a poquito, cuidarte en los detalles y seguir descubriendo esa personita tan linda que eres.</p>
+      <p>Me gusta pensar que esto recién está empezando, que todavía nos quedan conversaciones, risas, momentos inesperados y recuerdos por crear. Y aunque todavía no tengamos una foto juntos, ojalá un día miremos hacia atrás y nos riamos de cómo comenzó todo.</p>
+      <p>Gracias por llegar a mi vida y regalarle algo bonito a mis días. No sé qué nos traerá el futuro, pero sí sé que quiero vivir este comienzo con cariño, honestidad y muchas ganas de verte sonreír.</p>
+      <p>Feliz nuestro pequeño aniversario, mi niña. Que sea el primero de muchos momentos lindos, sin apuros y a nuestra manera.</p>
+      <p class="signature">Con todo mi cariño, para ti. ♡</p>
+    </div>
+    <div class="translation" id="indonesianLetter">
+      <strong>Terjemahan Bahasa Indonesia</strong>
+      <p>Mi niña YULI,</p>
+      <p>Kita bahkan belum genap satu bulan bersama, tapi aku ingin menulis sesuatu yang benar-benar datang dari hati. Aku nggak mau terburu-buru atau menjanjikan kisah seperti film yang selalu sempurna. Aku ingin mengenalmu pelan-pelan, menyayangimu lewat hal-hal kecil, dan terus mengenal sisi indah dari dirimu.</p>
+      <p>Aku suka membayangkan bahwa kisah kita baru saja dimulai; masih ada banyak obrolan, tawa, momen tak terduga, dan kenangan yang akan kita buat. Walaupun sekarang kita belum punya foto bersama, semoga suatu hari nanti kita bisa melihat kembali awal kisah ini sambil tersenyum.</p>
+      <p>Terima kasih sudah hadir di hidupku dan membawa hal-hal indah ke hari-hariku. Aku nggak tahu apa yang akan dibawa masa depan, tapi aku tahu aku ingin menjalani awal ini dengan kasih sayang, kejujuran, dan keinginan untuk terus melihatmu tersenyum.</p>
+      <p>Selamat untuk anniversary kecil kita, sayang. Semoga ini menjadi awal dari banyak momen indah, tanpa terburu-buru dan dengan cara kita sendiri.</p>
+      <p class="signature">Dengan seluruh kasih sayangku, untukmu. ♡</p>
+    </div>
+  </article>
+</section>
+<section id="waktu">
+  <div class="section-label" data-es="Cada día cuenta" data-id="Setiap hari berarti">Cada día cuenta</div>
+  <h2 data-es="Nuestro tiempo ♡" data-id="Waktu kita ♡">Nuestro tiempo ♡</h2>
+  <div class="panel counter">
+    <p data-es="El tiempo desde que empezó nuestra historia" data-id="Waktu sejak kisah kita dimulai">El tiempo desde que empezó nuestra historia</p>
+    <div class="counter-grid"><div class="timebox"><span class="num" id="days">—</span><span class="unit" data-es="Días" data-id="Hari">Días</span></div><div class="timebox"><span class="num" id="hours">—</span><span class="unit" data-es="Horas" data-id="Jam">Horas</span></div><div class="timebox"><span class="num" id="minutes">—</span><span class="unit" data-es="Minutos" data-id="Menit">Minutos</span></div><div class="timebox"><span class="num" id="seconds">—</span><span class="unit" data-es="Segundos" data-id="Detik">Segundos</span></div></div>
+    <div class="date-form"><label for="startDate" data-es="Nuestro día especial:" data-id="Tanggal spesial kita:">Nuestro día especial:</label><input type="date" id="startDate"><button class="btn primary" id="saveDate" data-es="Guardar fecha" data-id="Simpan tanggal">Guardar fecha</button></div>
+    <p class="note" data-es="La fecha no está inventada: elige aquí el día en que empezó lo de ustedes. Se guarda en este navegador. Si abres la página en otro teléfono, tendrás que configurarla de nuevo." data-id="Tanggalnya tidak dibuat-buat: pilih sendiri hari saat hubungan kalian dimulai. Tanggal tersimpan di browser ini. Jika halaman dibuka di HP lain, tanggal perlu diatur lagi.">La fecha no está inventada: elige aquí el día en que empezó lo de ustedes. Se guarda en este navegador. Si abres la página en otro teléfono, tendrás que configurarla de nuevo.</p>
+  </div>
+</section>
+<section>
+  <div class="section-label" data-es="Solo para sacarte una sonrisa" data-id="Khusus untuk membuatmu tersenyum">Solo para sacarte una sonrisa</div>
+  <h2 data-es="Abre tu sorpresa" data-id="Buka kejutanmu">Abre tu sorpresa</h2>
+  <div class="panel surprise" id="surprise">
+    <div class="heart-mark">♥</div>
+    <p class="surprise-quote" data-es="Si pudiera elegir un lugar bonito para estar ahora, elegiría uno donde pudiera verte sonreír, mi niña YULI." data-id="Kalau aku bisa memilih tempat indah untuk berada sekarang, aku akan memilih tempat di mana aku bisa melihatmu tersenyum, mi niña YULI.">Si pudiera elegir un lugar bonito para estar ahora, elegiría uno donde pudiera verte sonreír, mi niña YULI.</p>
+    <p data-es="Y si algún día tenemos nuestra primera foto juntos, quiero que sea una de esas que se guardan para siempre. ♡" data-id="Dan kalau suatu hari kita punya foto pertama bersama, aku ingin itu menjadi salah satu foto yang disimpan selamanya. ♡">Y si algún día tenemos nuestra primera foto juntos, quiero que sea una de esas que se guardan para siempre. ♡</p>
+  </div>
+</section>
+<footer>Hecho con <span>♥</span>, pensando en mi niña YULI.</footer>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+let lang='es';
+$('#langBtn').addEventListener('click',()=>{
+  lang=lang==='es'?'id':'es';
+  document.documentElement.lang=lang==='es'?'es':'id';
+  document.querySelectorAll('[data-es]').forEach(el=>{el.textContent=el.dataset[lang]});
+  $('#langBtn').textContent=lang==='es'?'Ver en Indonesia':'Lihat dalam Español';
+  $('#spanishLetter').style.display=lang==='es'?'block':'none';
+  $('#indonesianLetter').style.display=lang==='es'?'block':'block';
+  $('#indonesianLetter').querySelector('strong').style.display=lang==='es'?'block':'none';
+});
+/* Keep both letter versions visible in Spanish mode; show Indonesian-only when switched. */
+$('#spanishLetter').style.display='block';
+$('#indonesianLetter').style.display='block';
+const stars=$('#stars');
+for(let i=0;i<75;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.animationDuration=(2+Math.random()*4)+'s';stars.appendChild(s)}
+function heart(){const h=document.createElement('span');h.className='heart';h.textContent=Math.random()>.5?'♡':'♥';h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*24)+'px';h.style.animationDuration=(8+Math.random()*8)+'s';$('#hearts').appendChild(h);setTimeout(()=>h.remove(),17000)}
+setInterval(heart,900);for(let i=0;i<12;i++)setTimeout(heart,i*250);
+$('#surpriseBtn').addEventListener('click',()=>{const el=$('#surprise');el.classList.toggle('show');if(el.classList.contains('show')){el.scrollIntoView({behavior:'smooth',block:'center'});for(let i=0;i<20;i++)setTimeout(heart,i*70)}});
+let startDate=null;
+try{startDate=localStorage.getItem('yuli-anniversary-date')}catch(e){}
+if(startDate)$('#startDate').value=startDate;
+$('#saveDate').addEventListener('click',()=>{
+ const v=$('#startDate').value;
+ if(!v){alert(lang==='es'?'Elige primero la fecha en que comenzó lo de ustedes.':'Pilih dulu tanggal saat hubungan kalian dimulai.');return}
+ if(new Date(v+'T00:00:00')>new Date()){alert(lang==='es'?'Esa fecha todavía no llega.':'Tanggal itu belum tiba.');return}
+ startDate=v;try{localStorage.setItem('yuli-anniversary-date',v)}catch(e){}updateCounter();
+});
+function updateCounter(){
+ if(!startDate){['days','hours','minutes','seconds'].forEach(id=>$('#'+id).textContent='—');return}
+ const start=new Date(startDate+'T00:00:00'),now=new Date(),diff=now-start;
+ if(diff<0){return}
+ const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
+ $('#days').textContent=d;$('#hours').textContent=String(h).padStart(2,'0');$('#minutes').textContent=String(m).padStart(2,'0');$('#seconds').textContent=String(s).padStart(2,'0');
+}
+updateCounter();setInterval(updateCounter,1000);
+
+/* A gentle original melody made with Web Audio; no audio file or external service needed. */
+let audioCtx=null,playing=false,melodyTimer=null,step=0;
+const notes=[261.63,329.63,392,329.63,293.66,349.23,440,349.23,261.63,329.63,392,523.25,440,392,329.63,293.66];
+function playNote(freq,duration=.65){
+ if(!audioCtx)return;const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(.0001,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.055,audioCtx.currentTime+.06);g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+duration);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+duration+.02)
+}
+const musicBtn=document.createElement('button');musicBtn.className='pill';musicBtn.id='musicStatus';musicBtn.textContent='♫ Música: apagada';musicBtn.type='button';document.querySelector('nav').appendChild(musicBtn);
+musicBtn.addEventListener('click',async()=>{
+ if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==='suspended')await audioCtx.resume();
+ playing=!playing;
+ if(playing){musicBtn.textContent=lang==='es'?'♫ Música: sonando':'♫ Musik: menyala';playNote(notes[step++%notes.length]);melodyTimer=setInterval(()=>{if(playing)playNote(notes[step++%notes.length])},650)}
+ else{clearInterval(melodyTimer);musicBtn.textContent=lang==='es'?'♫ Música: apagada':'♫ Musik: mati'}
+});
+</script>
+</body>
+</html>
